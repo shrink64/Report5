@@ -3,13 +3,16 @@
  */
 public class report5 {
     public static void main(String[] args) {
-        String str = null;
+        String str = "3．14";
         try {
             System.out.printf("%s", str.length());
+            double value = Double.parseDouble(str);
         }
         catch(NullPointerException e) {
             System.out.println("NullPointerExceptionが発生しました。");
             e.printStackTrace();
         }
     }
+
+
 }

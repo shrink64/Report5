@@ -4,7 +4,12 @@
 public class report5 {
     public static void main(String[] args) {
         String str = null;
-        System.out.printf("%s", str.length());
-
+        try {
+            System.out.printf("%s", str.length());
+        }
+        catch(NullPointerException e) {
+            System.out.println("NullPointerExceptionが発生しました。");
+            e.printStackTrace();
+        }
     }
 }
